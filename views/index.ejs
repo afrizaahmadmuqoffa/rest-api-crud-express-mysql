@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Daftar Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1>Daftar Mahasiswa</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Kelas</th>
+                        <th>Program Studi</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="mahasiswa-list">
+                    <tr>
+                        <td>190001</td>
+                        <td>Budi</td>
+                        <td>3A</td>
+                        <td>Ilmu Komputer</td>
+                        <td>
+                            <button>Edit</button>
+                            <button>Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form">
+            <h2>Tambah Mahasiswa Baru</h2>
+            <form id="add-mahasiswa-form">
+                <input type="text" placeholder="NIM" name="nim" required>
+                <input type="text" placeholder="Nama" name="nama" required>
+                <input type="text" placeholder="Kelas" name="kelas" required>
+                <input type="text" placeholder="Program Studi" name="prodi" required>
+                <button type="submit">Tambah</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
